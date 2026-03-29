@@ -127,54 +127,125 @@
             //    Console.WriteLine("Numbers: " + string.Join(", ", phoneBook.Values));
             #endregion
             #region exercise4
-        //    // Case-insensitive HashSet
-        //    HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
-        //{
-        //    "ahmed@test.com",
-        //    "AHMED@test.com",
-        //    "sara@test.com",
-        //    "Sara@Test.Com"
-        //};
+            //    // Case-insensitive HashSet
+            //    HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+            //{
+            //    "ahmed@test.com",
+            //    "AHMED@test.com",
+            //    "sara@test.com",
+            //    "Sara@Test.Com"
+            //};
 
-        //    // Print count
-        //    Console.WriteLine("Email Count: " + emails.Count);
+            //    // Print count
+            //    Console.WriteLine("Email Count: " + emails.Count);
 
-        //    // Print stored emails
-        //    Console.WriteLine("Stored Emails:");
-        //    foreach (var email in emails)
-        //    {
-        //        Console.WriteLine(email);
-        //    }
+            //    // Print stored emails
+            //    Console.WriteLine("Stored Emails:");
+            //    foreach (var email in emails)
+            //    {
+            //        Console.WriteLine(email);
+            //    }
 
-        //    // Explanation
-        //    Console.WriteLine("\nExplanation: Duplicate emails (case-insensitive) are ignored.");
+            //    // Explanation
+            //    Console.WriteLine("\nExplanation: Duplicate emails (case-insensitive) are ignored.");
 
-        //    // -----------------------------
-        //    // Set Operations
-        //    // -----------------------------
-        //    HashSet<int> setA = new HashSet<int> { 1, 2, 3, 4, 5 };
-        //    HashSet<int> setB = new HashSet<int> { 4, 5, 6, 7, 8 };
+            //    // -----------------------------
+            //    // Set Operations
+            //    // -----------------------------
+            //    HashSet<int> setA = new HashSet<int> { 1, 2, 3, 4, 5 };
+            //    HashSet<int> setB = new HashSet<int> { 4, 5, 6, 7, 8 };
 
-        //    // Union
-        //    var union = new HashSet<int>(setA);
-        //    union.UnionWith(setB);
-        //    Console.WriteLine("\nUnion: " + string.Join(", ", union));
+            //    // Union
+            //    var union = new HashSet<int>(setA);
+            //    union.UnionWith(setB);
+            //    Console.WriteLine("\nUnion: " + string.Join(", ", union));
 
-        //    // Intersection
-        //    var intersect = new HashSet<int>(setA);
-        //    intersect.IntersectWith(setB);
-        //    Console.WriteLine("Intersection: " + string.Join(", ", intersect));
+            //    // Intersection
+            //    var intersect = new HashSet<int>(setA);
+            //    intersect.IntersectWith(setB);
+            //    Console.WriteLine("Intersection: " + string.Join(", ", intersect));
 
-        //    // Except
-        //    var except = new HashSet<int>(setA);
-        //    except.ExceptWith(setB);
-        //    Console.WriteLine("Except (A - B): " + string.Join(", ", except));
+            //    // Except
+            //    var except = new HashSet<int>(setA);
+            //    except.ExceptWith(setB);
+            //    Console.WriteLine("Except (A - B): " + string.Join(", ", except));
 
-        //    // Subset check
-        //    HashSet<int> subset = new HashSet<int> { 1, 2 };
-        //    Console.WriteLine("\nIs {1,2} subset of A? " + subset.IsSubsetOf(setA));
+            //    // Subset check
+            //    HashSet<int> subset = new HashSet<int> { 1, 2 };
+            //    Console.WriteLine("\nIs {1,2} subset of A? " + subset.IsSubsetOf(setA));
             #endregion
+            #region exercise5
+            //// Create queue and add documents
+            //Queue<string> printQueue = new Queue<string>();
+            //printQueue.Enqueue("Report.pdf");
+            //printQueue.Enqueue("Invoice.pdf");
+            //printQueue.Enqueue("Letter.docx");
+            //printQueue.Enqueue("Resume.pdf");
+            //printQueue.Enqueue("Photo.jpg");
 
+            //// Print queue contents
+            //Console.WriteLine("Queue Contents:");
+            //foreach (var doc in printQueue)
+            //{
+            //    Console.WriteLine(doc);
+            //}
+
+            //// Print count
+            //Console.WriteLine("\nCount: " + printQueue.Count);
+
+            //// Peek next document
+            //Console.WriteLine("Next to print (Peek): " + printQueue.Peek());
+
+            //// Process queue
+            //Console.WriteLine("\nProcessing Queue:");
+            //while (printQueue.Count > 0)
+            //{
+            //    string doc = printQueue.Dequeue();
+            //    Console.WriteLine("Printing: " + doc);
+            //}
+
+            //// TryDequeue on empty queue
+            //bool success = printQueue.TryDequeue(out string result);
+            //Console.WriteLine("\nTryDequeue success? " + success);
+            //Console.WriteLine("Result: " + (result ?? "null"));
+
+            #endregion
+            #region exercise6
+            //// Create stack (browser history)
+            //Stack<string> history = new Stack<string>();
+
+            //// Push URLs
+            //history.Push("google.com");
+            //history.Push("github.com");
+            //history.Push("stackoverflow.com");
+            //history.Push("youtube.com");
+            //history.Push("claude.ai");
+
+            //// Current page (top of stack)
+            //Console.WriteLine("Current Page: " + history.Peek());
+
+            //// Press "back" 3 times
+            //Console.WriteLine("\nGoing Back:");
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    string leftPage = history.Pop();
+            //    Console.WriteLine("Leaving: " + leftPage);
+            //}
+
+            //// Current page after going back
+            //Console.WriteLine("\nCurrent Page After Back: " + history.Peek());
+
+            //// Empty the stack completely
+            //while (history.Count > 0)
+            //{
+            //    history.Pop();
+            //}
+
+            //// TryPop on empty stack
+            //bool success = history.TryPop(out string result);
+            //Console.WriteLine("\nTryPop success? " + success);
+            //Console.WriteLine("Result: " + (result ?? "null"));
+            #endregion
         }
     }
     
