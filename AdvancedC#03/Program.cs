@@ -175,39 +175,39 @@
             //    Console.WriteLine("\nIs {1,2} subset of A? " + subset.IsSubsetOf(setA));
             #endregion
             #region exercise5
-            //// Create queue and add documents
-            //Queue<string> printQueue = new Queue<string>();
-            //printQueue.Enqueue("Report.pdf");
-            //printQueue.Enqueue("Invoice.pdf");
-            //printQueue.Enqueue("Letter.docx");
-            //printQueue.Enqueue("Resume.pdf");
-            //printQueue.Enqueue("Photo.jpg");
+            ////// Create queue and add documents
+            ////Queue<string> printQueue = new Queue<string>();
+            ////printQueue.Enqueue("Report.pdf");
+            ////printQueue.Enqueue("Invoice.pdf");
+            ////printQueue.Enqueue("Letter.docx");
+            ////printQueue.Enqueue("Resume.pdf");
+            ////printQueue.Enqueue("Photo.jpg");
 
-            //// Print queue contents
-            //Console.WriteLine("Queue Contents:");
-            //foreach (var doc in printQueue)
-            //{
-            //    Console.WriteLine(doc);
-            //}
+            ////// Print queue contents
+            ////Console.WriteLine("Queue Contents:");
+            ////foreach (var doc in printQueue)
+            ////{
+            ////    Console.WriteLine(doc);
+            ////}
 
-            //// Print count
-            //Console.WriteLine("\nCount: " + printQueue.Count);
+            ////// Print count
+            ////Console.WriteLine("\nCount: " + printQueue.Count);
 
-            //// Peek next document
-            //Console.WriteLine("Next to print (Peek): " + printQueue.Peek());
+            ////// Peek next document
+            ////Console.WriteLine("Next to print (Peek): " + printQueue.Peek());
 
-            //// Process queue
-            //Console.WriteLine("\nProcessing Queue:");
-            //while (printQueue.Count > 0)
-            //{
-            //    string doc = printQueue.Dequeue();
-            //    Console.WriteLine("Printing: " + doc);
-            //}
+            ////// Process queue
+            ////Console.WriteLine("\nProcessing Queue:");
+            ////while (printQueue.Count > 0)
+            ////{
+            ////    string doc = printQueue.Dequeue();
+            ////    Console.WriteLine("Printing: " + doc);
+            ////}
 
-            //// TryDequeue on empty queue
-            //bool success = printQueue.TryDequeue(out string result);
-            //Console.WriteLine("\nTryDequeue success? " + success);
-            //Console.WriteLine("Result: " + (result ?? "null"));
+            ////// TryDequeue on empty queue
+            ////bool success = printQueue.TryDequeue(out string result);
+            ////Console.WriteLine("\nTryDequeue success? " + success);
+            ////Console.WriteLine("Result: " + (result ?? "null"));
 
             #endregion
             #region exercise6
