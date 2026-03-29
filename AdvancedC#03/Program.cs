@@ -84,47 +84,47 @@
             //    }
             #endregion
             #region exercise3
-            //    // Create phone book
-            //    Dictionary<string, string> phoneBook = new Dictionary<string, string>()
-            //{
-            //    {"Ahmed", "0101111111"},
-            //    {"Sara", "0102222222"},
-            //    {"Ali", "0103333333"},
-            //    {"Mona", "0104444444"}
-            //};
+            ////    // Create phone book
+            ////    Dictionary<string, string> phoneBook = new Dictionary<string, string>()
+            ////{
+            ////    {"Ahmed", "0101111111"},
+            ////    {"Sara", "0102222222"},
+            ////    {"Ali", "0103333333"},
+            ////    {"Mona", "0104444444"}
+            ////};
 
-            //    // Add or update using []
-            //    phoneBook["Ahmed"] = "0109999999"; // update
-            //    phoneBook["Omar"] = "0105555555";  // add
+            ////    // Add or update using []
+            ////    phoneBook["Ahmed"] = "0109999999"; // update
+            ////    phoneBook["Omar"] = "0105555555";  // add
 
-            //    // Try adding duplicate using Add()
-            //    try
-            //    {
-            //        phoneBook.Add("Ahmed", "0000000000");
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        Console.WriteLine("Error using Add(): " + ex.Message);
-            //    }
+            ////    // Try adding duplicate using Add()
+            ////    try
+            ////    {
+            ////        phoneBook.Add("Ahmed", "0000000000");
+            ////    }
+            ////    catch (Exception ex)
+            ////    {
+            ////        Console.WriteLine("Error using Add(): " + ex.Message);
+            ////    }
 
-            //    // Try adding duplicate using TryAdd()
-            //    bool added = phoneBook.TryAdd("Ahmed", "0000000000");
-            //    Console.WriteLine("TryAdd success? " + added);
+            ////    // Try adding duplicate using TryAdd()
+            ////    bool added = phoneBook.TryAdd("Ahmed", "0000000000");
+            ////    Console.WriteLine("TryAdd success? " + added);
 
-            //    // Search for a contact that doesn’t exist
-            //    Console.WriteLine("\nContains 'Khaled'? " + phoneBook.ContainsKey("Khaled"));
+            ////    // Search for a contact that doesn’t exist
+            ////    Console.WriteLine("\nContains 'Khaled'? " + phoneBook.ContainsKey("Khaled"));
 
-            //    // Get contact with fallback
-            //    string result = phoneBook.TryGetValue("Khaled", out string number)
-            //                    ? number
-            //                    : "Not Found";
-            //    Console.WriteLine("Khaled number: " + result);
+            ////    // Get contact with fallback
+            ////    string result = phoneBook.TryGetValue("Khaled", out string number)
+            ////                    ? number
+            ////                    : "Not Found";
+            ////    Console.WriteLine("Khaled number: " + result);
 
-            //    // Print all keys in one line
-            //    Console.WriteLine("\nNames: " + string.Join(", ", phoneBook.Keys));
+            ////    // Print all keys in one line
+            ////    Console.WriteLine("\nNames: " + string.Join(", ", phoneBook.Keys));
 
-            //    // Print all values in one line
-            //    Console.WriteLine("Numbers: " + string.Join(", ", phoneBook.Values));
+            ////    // Print all values in one line
+            ////    Console.WriteLine("Numbers: " + string.Join(", ", phoneBook.Values));
             #endregion
             #region exercise4
             //    // Case-insensitive HashSet
