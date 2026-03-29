@@ -45,43 +45,134 @@
             #endregion
             #region exercise2
 
-        //    SortedList<int, string> leaderboard = new SortedList<int, string>()
+            //    SortedList<int, string> leaderboard = new SortedList<int, string>()
+            //{
+            //    {500, "Ahmed"},
+            //    {200, "Sara"},
+            //    {800, "Ali"},
+            //    {350, "Mona"}
+            //};
+
+            //    // Print all entries
+            //    Console.WriteLine("Leaderboard:");
+            //    foreach (var entry in leaderboard)
+            //    {
+            //        Console.WriteLine($"Score: {entry.Key}, Player: {entry.Value}");
+            //    }
+
+            //    // Access first key and value (by index)
+            //    Console.WriteLine("\nFirst Score: " + leaderboard.Keys[0]);
+            //    Console.WriteLine("First Player: " + leaderboard.Values[0]);
+
+            //    // Check if score 500 exists
+            //    Console.WriteLine("\nContains score 500? " + leaderboard.ContainsKey(500));
+
+            //    // Safely get player with score 999
+            //    if (leaderboard.TryGetValue(999, out string player))
+            //        Console.WriteLine("Player with score 999: " + player);
+            //    else
+            //        Console.WriteLine("Score 999 not found");
+
+            //    // Remove player with score 200
+            //    leaderboard.Remove(200);
+
+            //    // Print updated leaderboard
+            //    Console.WriteLine("\nUpdated Leaderboard:");
+            //    foreach (var entry in leaderboard)
+            //    {
+            //        Console.WriteLine($"Score: {entry.Key}, Player: {entry.Value}");
+            //    }
+            #endregion
+            #region exercise3
+            //    // Create phone book
+            //    Dictionary<string, string> phoneBook = new Dictionary<string, string>()
+            //{
+            //    {"Ahmed", "0101111111"},
+            //    {"Sara", "0102222222"},
+            //    {"Ali", "0103333333"},
+            //    {"Mona", "0104444444"}
+            //};
+
+            //    // Add or update using []
+            //    phoneBook["Ahmed"] = "0109999999"; // update
+            //    phoneBook["Omar"] = "0105555555";  // add
+
+            //    // Try adding duplicate using Add()
+            //    try
+            //    {
+            //        phoneBook.Add("Ahmed", "0000000000");
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.WriteLine("Error using Add(): " + ex.Message);
+            //    }
+
+            //    // Try adding duplicate using TryAdd()
+            //    bool added = phoneBook.TryAdd("Ahmed", "0000000000");
+            //    Console.WriteLine("TryAdd success? " + added);
+
+            //    // Search for a contact that doesn’t exist
+            //    Console.WriteLine("\nContains 'Khaled'? " + phoneBook.ContainsKey("Khaled"));
+
+            //    // Get contact with fallback
+            //    string result = phoneBook.TryGetValue("Khaled", out string number)
+            //                    ? number
+            //                    : "Not Found";
+            //    Console.WriteLine("Khaled number: " + result);
+
+            //    // Print all keys in one line
+            //    Console.WriteLine("\nNames: " + string.Join(", ", phoneBook.Keys));
+
+            //    // Print all values in one line
+            //    Console.WriteLine("Numbers: " + string.Join(", ", phoneBook.Values));
+            #endregion
+            #region exercise4
+        //    // Case-insensitive HashSet
+        //    HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
         //{
-        //    {500, "Ahmed"},
-        //    {200, "Sara"},
-        //    {800, "Ali"},
-        //    {350, "Mona"}
+        //    "ahmed@test.com",
+        //    "AHMED@test.com",
+        //    "sara@test.com",
+        //    "Sara@Test.Com"
         //};
 
-        //    // Print all entries
-        //    Console.WriteLine("Leaderboard:");
-        //    foreach (var entry in leaderboard)
+        //    // Print count
+        //    Console.WriteLine("Email Count: " + emails.Count);
+
+        //    // Print stored emails
+        //    Console.WriteLine("Stored Emails:");
+        //    foreach (var email in emails)
         //    {
-        //        Console.WriteLine($"Score: {entry.Key}, Player: {entry.Value}");
+        //        Console.WriteLine(email);
         //    }
 
-        //    // Access first key and value (by index)
-        //    Console.WriteLine("\nFirst Score: " + leaderboard.Keys[0]);
-        //    Console.WriteLine("First Player: " + leaderboard.Values[0]);
+        //    // Explanation
+        //    Console.WriteLine("\nExplanation: Duplicate emails (case-insensitive) are ignored.");
 
-        //    // Check if score 500 exists
-        //    Console.WriteLine("\nContains score 500? " + leaderboard.ContainsKey(500));
+        //    // -----------------------------
+        //    // Set Operations
+        //    // -----------------------------
+        //    HashSet<int> setA = new HashSet<int> { 1, 2, 3, 4, 5 };
+        //    HashSet<int> setB = new HashSet<int> { 4, 5, 6, 7, 8 };
 
-        //    // Safely get player with score 999
-        //    if (leaderboard.TryGetValue(999, out string player))
-        //        Console.WriteLine("Player with score 999: " + player);
-        //    else
-        //        Console.WriteLine("Score 999 not found");
+        //    // Union
+        //    var union = new HashSet<int>(setA);
+        //    union.UnionWith(setB);
+        //    Console.WriteLine("\nUnion: " + string.Join(", ", union));
 
-        //    // Remove player with score 200
-        //    leaderboard.Remove(200);
+        //    // Intersection
+        //    var intersect = new HashSet<int>(setA);
+        //    intersect.IntersectWith(setB);
+        //    Console.WriteLine("Intersection: " + string.Join(", ", intersect));
 
-        //    // Print updated leaderboard
-        //    Console.WriteLine("\nUpdated Leaderboard:");
-        //    foreach (var entry in leaderboard)
-        //    {
-        //        Console.WriteLine($"Score: {entry.Key}, Player: {entry.Value}");
-        //    }
+        //    // Except
+        //    var except = new HashSet<int>(setA);
+        //    except.ExceptWith(setB);
+        //    Console.WriteLine("Except (A - B): " + string.Join(", ", except));
+
+        //    // Subset check
+        //    HashSet<int> subset = new HashSet<int> { 1, 2 };
+        //    Console.WriteLine("\nIs {1,2} subset of A? " + subset.IsSubsetOf(setA));
             #endregion
 
         }
